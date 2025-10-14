@@ -178,7 +178,7 @@ a:hover span {
     position: relative;
     background-color: #f0f0f0;
     width: 100%;
-    margin-left: 220px;
+    margin-left: 500px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -218,7 +218,6 @@ a:hover span {
 .circle h1 {
     font-size: 80px;
     font-weight: 900;
-    margin-left: 15px;
 }
 
 .circle p {
@@ -235,7 +234,7 @@ a:hover span {
 ============================= */
 #line {
     border-bottom: 5px solid rgb(40, 40, 150);
-    width: 1290px;
+    width: 1830px;
 }
 
 #history {

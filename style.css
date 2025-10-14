@@ -1,0 +1,262 @@
+/* =============================
+.          CSS
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =============================
+   General Styles
+============================= */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #222;
+    padding: 20px;
+}
+
+img {
+    position: relative;
+    top: 10px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    animation: left 1s ease-out;
+}
+
+/* =============================
+   Hero Section
+============================= */
+.hero {
+    background-color: rgb(40, 40, 150); 
+    color: white;
+    padding: 100px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    animation: left 1s ease-out;
+}
+
+/* Animation */
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Label above title */
+.section-label {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #89a1c8;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Main Title */
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* =============================
+   Section Styles
+============================= */
+section {
+    background: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+/* Headings */
+h2 {
+    color: black;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    text-align: left;
+}
+
+li {
+    margin: 10px 0;
+    text-align: left;
+    list-style: none;
+}
+
+
+/* Links */
+a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    transition: color 0.3s ease;
+}
+
+a span {  
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+}
+
+span {
+    position: relative;
+    left: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover span {
+    transform: translateX(5px); 
+}
+
+/* =============================
+   Layout & Content
+============================= */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.introduction {
+    width: 50%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================
+   Pay Gap Circle
+============================= */
+.pay-gap-stat {
+    position: relative;
+    background-color: #f0f0f0;
+    width: 100%;
+    margin-left: 220px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pay-gap-stat:hover #aft {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    cursor: none;
+}
+
+/* Circle Style */
+.circle {
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    box-shadow: 0 0 25px rgba(64, 64, 255, 0.3);
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: none;
+}
+
+.circle h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.circle h1 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.circle p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#aft {
+    opacity: 0;
+}
+
+/* =============================
+   History Section
+============================= */
+#line {
+    border-bottom: 5px solid rgb(40, 40, 150);
+    width: 1290px;
+}
+
+#history {
+    text-align: center;
+    margin-left: 225px;
+    font-size: 25px;
+}
+
+#history-sub {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
